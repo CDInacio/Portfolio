@@ -5,7 +5,7 @@ import Projects from "../components/Projects/Projects";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden  bg-background">
       <Hero />
       <About />
       <Stacks />

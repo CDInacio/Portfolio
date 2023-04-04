@@ -5,6 +5,8 @@ import { PROJECTS } from "../../app/constants/constants";
 
 import ProjectItem from "./ProjectItem";
 
+import styles from "../style.module.css";
+
 const inView = {
   opacity: 1,
   y: 0,
@@ -14,7 +16,9 @@ const inView = {
 export default function Projects() {
   return (
     <AnimatePresence>
-      <section className="px-6 mt-36 mb-28 bg-primary -skew-y-6 relative -z-50 py-48 overflow-hidden">
+      <section
+        className={`px-6 mt-36 mb-28  dark:bg-veryDarkPrimary -skew-y-6 relative  py-48 overflow-hidden ${styles.gradient}`}
+      >
         <motion.div initial={{ opacity: 0, y: 80 }} whileInView={inView}>
           <div className="skew-y-6  max-w-7xl  mx-auto text-white">
             <h1 className="font-neue text-5xl text-center mb-20">Projetos</h1>

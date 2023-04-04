@@ -1,8 +1,12 @@
 import Image from "next/image";
 
+import styles from "../style.module.css";
+
 export default function About() {
   return (
-    <section className="bg-primary -skew-y-6 relative -z-50 py-48 -mt-28">
+    <section
+      className={`bg-primary -skew-y-6 relative  mt-28  py-48 ${styles.gradient}`}
+    >
       <div className="skew-y-6 px-6">
         <div className="max-w-4xl  mx-auto text-white">
           <h1 className="font-neue text-5xl text-center mb-10">SOBRE MIM</h1>

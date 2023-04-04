@@ -6,7 +6,7 @@ import Icon from "../Icon";
 export default function StackItem({ stackName }) {
   return (
     <div
-      className={`h-40 hover:bg-neutral-100 duration-500  rounded-lg ${styles.shadow} shadow-zinc-500 hover:shadow-none flex items-center justify-center cursor-pointer`}
+      className={`h-40 shadow-md dark:bg-panelDark bg-panel duration-500  rounded-lg  hover:shadow-none hover:bg-background flex items-center justify-center cursor-pointer`}
     >
       <Icon name={stackName} />
     </div>

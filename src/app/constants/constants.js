@@ -16,7 +16,7 @@ export const LINKS = [
 export const PROJECTS = [
   {
     id: "p1",
-    name: "Countries",
+    name: "Bakery Site",
     image: "/images/countries.png",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cum corporis velit odit eos suscipit expedita facilis rerum culpa fugit.",
@@ -24,6 +24,14 @@ export const PROJECTS = [
   },
   {
     id: "p2",
+    name: "Countries",
+    image: "/images/countries.png",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio cum corporis velit odit eos suscipit expedita facilis rerum culpa fugit.",
+    stacks: ["React", "Tailwind CSS"],
+  },
+  {
+    id: "p3",
     name: "Movie and Series Finder",
     image: "/images/movieFinder.png",
     description:
@@ -31,7 +39,7 @@ export const PROJECTS = [
     stacks: ["React", "Tailwind CSS"],
   },
   {
-    id: "p3",
+    id: "p4",
     name: "Know Your Calores",
     image: "/images/calories.png",
     description:
