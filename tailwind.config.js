@@ -24,6 +24,7 @@ module.exports = {
         secondary: "#02aab0",
         background: "hsl(0, 0%, 98%)",
         panel: "hsl(0, 0%, 100%)",
+        dark: "#222222",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
