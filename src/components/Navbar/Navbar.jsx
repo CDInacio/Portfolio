@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { IoMdMenu, IoMdPerson, IoIosBuild } from "react-icons/io";
 
-import { LINKS } from "@/app/constants/constants";
+import { LINKS } from "@/constants/constants";
 
 export default function Navbar() {
   const lastScrollTop = useRef(0);
