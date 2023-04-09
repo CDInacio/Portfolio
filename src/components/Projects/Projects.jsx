@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { PROJECTS } from "../../app/constants/constants";
+import { PROJECTS } from "../../constants/constants";
 
 import ProjectItem from "./ProjectItem";
 
