@@ -17,7 +17,7 @@ export default function StackItem({ stackName, description, color }) {
         onClick={handleOpen}
         className={`h-40 shadow-md dark:bg-panelDark bg-panel duration-500  rounded-lg  hover:shadow-none  flex items-center justify-center cursor-pointer`}
       >
-        <Icon name={stackName} />
+        <Icon stl="text-neutral-800" name={stackName} />
       </div>
       <Modal
         open={open}
