@@ -8,7 +8,7 @@ import styles from "../style.module.css";
 export default function ProjectItem({ ...props }) {
   return (
     <div
-      className={`bg-white min-h-[550px] rounded-lg text-neutral-800  overflow-hidden ${styles.shadow}  relative`}
+      className={`bg-white min-h-[550px] rounded-lg text-neutral-800  overflow-hidden shadow-md relative`}
     >
       <div className="h-64 relative bg-white">
         <Image
@@ -23,7 +23,7 @@ export default function ProjectItem({ ...props }) {
           {props.stacks.map((stack) => (
             <span
               key={stack}
-              className="bg-slate-900 text-white rounded-md p-2 mt-2 text-xs mr-2 cursor-pointer"
+              className="bg-neutral-800 text-white rounded-md p-2 mt-2 text-xs mr-2 cursor-pointer"
             >
               {stack}
             </span>
@@ -40,7 +40,7 @@ export default function ProjectItem({ ...props }) {
             <a
               href={props.demo}
               target="_blank"
-              className="bg-primary text-white p-2 rounded-md flex items-center mr-5 text-sm sm:text-normal"
+              className="bg-neutral-800 text-white p-2 rounded-md flex items-center mr-5 text-sm sm:text-normal"
             >
               <p className="mr-2">Demo</p>
               <GoLinkExternal size={20} />
