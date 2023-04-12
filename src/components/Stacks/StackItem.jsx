@@ -1,14 +1,30 @@
 "use client";
 
-import styles from "../style.module.css";
-import Icon from "../Icon";
+import { useState } from "react";
 
-export default function StackItem({ stackName }) {
+import Icon from "../Icon";
+import Modal from "../Utils/Modal";
+
+export default function StackItem({ stackName, description, color }) {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+
+  const handleClose = () => setOpen(false);
+
   return (
-    <div
-      className={`h-40 shadow-md dark:bg-panelDark bg-panel duration-500  rounded-lg  hover:shadow-none hover:bg-background flex items-center justify-center cursor-pointer`}
-    >
-      <Icon name={stackName} />
-    </div>
+    <>
+      <div
+        onClick={handleOpen}
+        className={`h-40 shadow-md dark:bg-panelDark bg-panel duration-500  rounded-lg  hover:shadow-none  flex items-center justify-center cursor-pointer`}
+      >
+        <Icon name={stackName} />
+      </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        stackName={stackName}
+        description={description}
+      />
+    </>
   );
 }

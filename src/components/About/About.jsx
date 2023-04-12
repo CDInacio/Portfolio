@@ -1,36 +1,53 @@
+"use client";
+
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 
 import styles from "../style.module.css";
 
+const inView = {
+  opacity: 1,
+  y: 0,
+  transition: { duration: 0.9, ease: "easeInOut" },
+};
+
 export default function About() {
   return (
-    <section
-      className={`bg-primary -skew-y-6 relative  mt-28  py-48 ${styles.gradient}`}
-    >
-      <div className="skew-y-6 px-6">
-        <div className="max-w-4xl  mx-auto text-white">
-          <h1 className="font-neue text-5xl text-center mb-10">SOBRE MIM</h1>
-          <div className="flex flex-col md:flex-row flex-1 items-center">
-            <div className=" w-[130px] h-[130px] relative">
-              <Image
-                fill
-                className=" object-cover"
-                src="/images/profile.svg"
-                alt="image de perfil"
-              />
+    <AnimatePresence>
+      <section
+        className={`bg-primary -skew-y-6 relative  mt-28  py-48 ${styles.gradient}`}
+      >
+        <motion.div initial={{ opacity: 0, y: 80 }} whileInView={inView}>
+          <div className="skew-y-6 px-6">
+            <div className="max-w-4xl  mx-auto text-white">
+              <h1 className="font-neue text-5xl text-center mb-10">
+                SOBRE MIM
+              </h1>
+              <div className="flex flex-col md:flex-row flex-1 items-center">
+                <div className=" w-[130px] h-[130px] relative">
+                  <Image
+                    fill
+                    className=" object-cover"
+                    src="/images/profile.svg"
+                    alt="imagem de perfil"
+                  />
+                </div>
+                <p className="flex-1 ml-0 mt-10 md:mt-0 md:ml-5 opacity-80 font-light">
+                  Olá, me chamdo Cláudio Vitor Dantas e atualmente curso
+                  Sistemas de Informação. Eu descobri a programação Web a pouco
+                  mais de um ano e meio, e foi aí que descobri a área da
+                  programação que gostaria de seguir. Meus estudos estão
+                  voltados mais para a parte do Front-End, utilizando
+                  tecnologias como React, Next.js, TailWind CSS e etc. Neste
+                  site você encontrará as principais tecnologias que utilizo em
+                  meus projetos pessoais, além dos projetos em si e suas
+                  descrições.
+                </p>
+              </div>
             </div>
-            <p className="flex-1 ml-0 mt-10 md:mt-0 md:ml-5 opacity-80 font-light">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-              cupiditate eaque tenetur sequi laudantium nihil ratione? Sunt aut
-              odit porro quisquam veritatis, repellendus dicta pariatur sed
-              blanditiis, sint earum natus autem assumenda , molestiae iure?
-              Minus ea, officiis consequuntur eaque totam voluptatum sit
-              laudantium numquam accusantium. Deleniti cumque quo praesentium
-              dolores?
-            </p>
           </div>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </section>
+    </AnimatePresence>
   );
 }

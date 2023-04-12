@@ -1,45 +1,56 @@
-import Image from "next/image";
-
-import { GoLinkExternal } from "react-icons/go";
 import { BsGithub } from "react-icons/bs";
+import { GoLinkExternal } from "react-icons/go";
+
+import Image from "next/image";
 
 import styles from "../style.module.css";
 
-export default function ProjectItem({ stacks, image, name, description }) {
+export default function ProjectItem({ ...props }) {
   return (
     <div
-      className={`bg-white rounded-md text-neutral-800  overflow-hidden ${styles.shadow} cursor-pointer`}
+      className={`bg-white min-h-[550px] rounded-lg text-neutral-800  overflow-hidden ${styles.shadow}  relative`}
     >
       <div className="h-64 relative bg-white">
         <Image
           className="object-cover"
           fill
-          src={image}
-          alt={`imagem do projeto ${name}`}
+          src={props.image}
+          alt={`imagem do projeto ${props.name}`}
         />
       </div>
-      <div className="px-4 py-4">
-        <div className="">
-          {stacks.map((stack) => (
+      <div className="px-4 pt-2 pb-4 flex flex-col  ">
+        <div className="flex flex-wrap">
+          {props.stacks.map((stack) => (
             <span
               key={stack}
-              className="bg-slate-900 text-white rounded-md p-2 text-xs mr-2"
+              className="bg-slate-900 text-white rounded-md p-2 mt-2 text-xs mr-2 cursor-pointer"
             >
               {stack}
             </span>
           ))}
         </div>
-        <h1 className="text-2xl font-neue font-bold  tracking-wide	mt-4">
-          {name}
+        <h1 className="text-xl sm:text-2xl font-neue font-bold  tracking-wide	mt-4">
+          {props.name}
         </h1>
-        <p className=" text-neutral-600 mt-2 mb-3">{description}</p>
-        <div className="flex justify-between">
-          <div className="bg-primary text-white p-2 rounded-sm flex items-center mr-5">
-            <p className="mr-2">Demo</p>
-            <GoLinkExternal size={20} />
+        <p className=" text-neutral-600 mt-3 mb-4 text-sm sm:text-normal">
+          {props.description}
+        </p>
+        {props.done ? (
+          <div className="flex justify-between items-center">
+            <a
+              href={props.demo}
+              target="_blank"
+              className="bg-primary text-white p-2 rounded-md flex items-center mr-5 text-sm sm:text-normal"
+            >
+              <p className="mr-2">Demo</p>
+              <GoLinkExternal size={20} />
+            </a>
+            <a href={props.code} target="_blank" className="">
+              {" "}
+              <BsGithub size={20} />
+            </a>
           </div>
-          <BsGithub size={20} />
-        </div>
+        ) : null}
       </div>
     </div>
   );

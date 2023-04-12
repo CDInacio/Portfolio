@@ -1,11 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+
 import { PROJECTS } from "../../constants/constants";
-
-import ProjectItem from "./ProjectItem";
-
 import styles from "../style.module.css";
+import ProjectItem from "./ProjectItem";
 
 const inView = {
   opacity: 1,
@@ -23,13 +22,16 @@ export default function Projects() {
           <div className="skew-y-6  max-w-7xl  mx-auto text-white">
             <h1 className="font-neue text-5xl text-center mb-20">Projetos</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 z-50">
-              {PROJECTS.map(({ stacks, image, name, description, id }) => (
+              {PROJECTS.map((project) => (
                 <ProjectItem
-                  key={id}
-                  stacks={stacks}
-                  image={image}
-                  name={name}
-                  description={description}
+                  key={project.id}
+                  stacks={project.stacks}
+                  image={project.image}
+                  name={project.name}
+                  description={project.description}
+                  done={project.done}
+                  demo={project.demo}
+                  code={project.code}
                 />
               ))}
             </div>

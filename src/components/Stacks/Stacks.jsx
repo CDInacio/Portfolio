@@ -1,7 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { STACKS } from "../../app/constants/constants";
+
+import { STACKS } from "../../constants/constants";
 import StackItem from "./StackItem";
 
 // animate: defines animation
@@ -25,8 +26,13 @@ export default function Stacks() {
           Tecnologias que utilizo em meus projetos
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-2 lg:gap-6 mt-14">
-          {STACKS.map(({ id, stack }) => (
-            <StackItem key={id} stackName={stack} />
+          {STACKS.map(({ id, stack, color, description }) => (
+            <StackItem
+              color={color}
+              key={id}
+              stackName={stack}
+              description={description}
+            />
           ))}
         </div>
       </motion.section>
