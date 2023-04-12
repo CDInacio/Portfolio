@@ -35,7 +35,7 @@ export default function About() {
                 <p className="flex-1 ml-0 mt-10 md:mt-0 md:ml-10 opacity-80 font-light drop-shadow-md">
                   Olá, me chamdo Cláudio Vitor Dantas e atualmente curso
                   Sistemas de Informação. Eu descobri a programação Web a pouco
-                  mais de um ano e meio, e foi aí que descobri a área da
+                  mais de um ano e meio, e foi aí que me dei conta da área da
                   programação que gostaria de seguir. Meus estudos estão
                   voltados mais para a parte do Front-End, utilizando
                   tecnologias como React, Next.js, TailWind CSS e etc. Neste
