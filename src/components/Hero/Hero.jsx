@@ -37,20 +37,20 @@ export default function Hero() {
             target="_blank"
             className="mx-2 cursor-pointer"
           >
-            <IoLogoLinkedin className="text-dark hover:text-secondary duration-200 text-2xl sm:text-3xl" />
+            <IoLogoLinkedin className="text-dark hover:text-primary duration-200 text-2xl sm:text-3xl" />
           </a>
           <a
             href="https://github.com/CDInacio"
             target="_blank"
             className="mx-2 cursor-pointer "
           >
-            <IoLogoGithub className="text-dark hover:text-secondary duration-200 text-2xl sm:text-3xl" />
+            <IoLogoGithub className="text-dark hover:text-primary duration-200 text-2xl sm:text-3xl" />
           </a>
           <a
             onClick={() => handleSendEmail("claudiodantas1996@gmail.com")}
             className="mx-2 cursor-pointer "
           >
-            <IoMailOutline className="text-dark hover:text-secondary duration-200 text-2xl sm:text-3xl" />
+            <IoMailOutline className="text-dark hover:text-primary duration-200 text-2xl sm:text-3xl" />
           </a>
         </div>
       </div>
