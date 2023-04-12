@@ -24,15 +24,15 @@ export default function About() {
                 SOBRE MIM
               </h1>
               <div className="flex flex-col md:flex-row flex-1 items-center">
-                <div className=" w-[130px] h-[130px] relative">
+                <div className=" w-[150px] h-[150px] relative">
                   <Image
                     fill
-                    className=" object-cover"
-                    src="/images/profile.svg"
+                    className=" object-cover rounded-full"
+                    src="/images/profile.jpeg"
                     alt="imagem de perfil"
                   />
                 </div>
-                <p className="flex-1 ml-0 mt-10 md:mt-0 md:ml-5 opacity-80 font-light">
+                <p className="flex-1 ml-0 mt-10 md:mt-0 md:ml-10 opacity-80 font-light drop-shadow-md">
                   Olá, me chamdo Cláudio Vitor Dantas e atualmente curso
                   Sistemas de Informação. Eu descobri a programação Web a pouco
                   mais de um ano e meio, e foi aí que descobri a área da
