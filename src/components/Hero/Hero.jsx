@@ -13,7 +13,7 @@ export default function Hero() {
     <div className="w-screen h-screen object-cover  bg-background">
       <div className="relative px-6  max-w-7xl h-full flex items-center  mx-auto">
         <div className="">
-          <h3 className=" text-neutral-800 sm:text-lg font-bold -mb-2 sm:mb-2">
+          <h3 className=" text-neutral-800 sm:text-lg font-bold -mb-3 sm:mb-3">
             Seja Bem-vindo, eu sou
           </h3>
           <h1 className=" font-neue text-[60px] sm:text-8xl lg:text-9xl text-primary">
