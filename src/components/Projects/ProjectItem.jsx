@@ -32,7 +32,7 @@ export default function ProjectItem({ ...props }) {
         <h1 className="text-xl sm:text-2xl font-neue font-bold  tracking-wide	mt-4">
           {props.name}
         </h1>
-        <p className=" text-neutral-600 mt-3 mb-4 text-sm sm:text-normal">
+        <p className=" text-neutral-600 mt-3 mb-4 text-sm sm:text-base">
           {props.description}
         </p>
         {props.done ? (
@@ -40,7 +40,7 @@ export default function ProjectItem({ ...props }) {
             <a
               href={props.demo}
               target="_blank"
-              className="bg-neutral-800 text-white p-2 rounded-md flex items-center mr-5 text-sm sm:text-normal"
+              className="bg-neutral-800 text-white p-2 rounded-md flex items-center mr-5 text-sm sm:text-base"
             >
               <p className="mr-2">Demo</p>
               <GoLinkExternal size={20} />
