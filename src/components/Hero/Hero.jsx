@@ -24,7 +24,7 @@ export default function Hero() {
             <p className="mr-1">Desenvolvedor</p>
             <Typewriter
               options={{
-                strings: [" Front-End", " React"],
+                strings: [" Front-end", " React"],
                 autoStart: true,
                 loop: true,
               }}
