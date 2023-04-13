@@ -67,7 +67,7 @@ export const PROJECTS = [
     name: "Previsões",
     image: "/images/weather.png",
     description:
-      "Projeto feito para buscar informações relevantes sobre o clima de uma determinada cidade, com a posibilidade de alterar entre o tema claro e escuro. Além disso, foi o primeiro projeto onde utilizei uma forma diferente de buscar dados de uma API.",
+      "Projeto feito para buscar informações relevantes sobre o clima de uma determinada cidade, com a possibilidade de alterar entre o tema claro e escuro. Além disso, foi o primeiro projeto onde utilizei uma forma diferente de buscar dados de uma API.",
     stacks: ["React", "TypeScript", "Tailwind CSS", "React Query"],
     demo: "https://previsoes-mu.vercel.app/",
     code: "https://github.com/CDInacio/weather-app",
@@ -86,7 +86,7 @@ export const PROJECTS = [
     name: "Countries",
     image: "/images/countries.png",
     description:
-      "Esse projeto foi um desafio encontrado no site Frontend Mentor, onde eu deveria fazer o consumo de uma api para disponibilizar informações sobre países, além de replicar o desing e criar uma funcionalidade de dark mode.",
+      "Esse projeto foi um desafio encontrado no site Front-end Mentor, onde eu deveria fazer o consumo de uma API para disponibilizar informações sobre países, além de replicar o desing e criar uma funcionalidade de dark mode.",
     stacks: ["React", "TypeScript", "Tailwind CSS"],
     demo: "https://countries-lilac.vercel.app/",
     code: "https://github.com/CDInacio/REST-Countries-API-with-color-theme-switcher",
@@ -97,7 +97,7 @@ export const PROJECTS = [
     name: "Movie and Series Finder",
     image: "/images/movieFinder.png",
     description:
-      "Utilizando a  OMDb API, neste projeto você pode pesquisar pelo filme e série que quiser, e tabém ver informações detalhadas sobre ele. Este foi meu primeiro projeto usando o bundler Vite, que se tornou a forma mais popular de criar projetos React.",
+      "Utilizando a  OMDb API, neste projeto você pode pesquisar pelo filme e série que quiser, e também ver informações detalhadas sobre ele. Este foi meu primeiro projeto usando o bundler Vite, que se tornou a forma mais popular de criar projetos React.",
     stacks: ["React", "Tailwind CSS"],
     demo: "https://movie-and-series-finder.vercel.app/",
     code: "https://github.com/CDInacio/movie-and-series-finder",
@@ -108,7 +108,7 @@ export const PROJECTS = [
     name: "Know Your Calories",
     image: "/images/calories.png",
     description:
-      "Este projeto surgiu a partir de uma curiosidade sobre como programar em React Native. Nele, você pode ver as informações nutricionais de diversos tipos de alimentos; além de poder ver e contar a distrubição calóricas dos mesmos.",
+      "Este projeto surgiu a partir de uma curiosidade sobre como programar em React Native. Nele, você pode ver as informações nutricionais de diversos tipos de alimentos; além de poder ver e contar a distribuição calóricas dos mesmos.",
     stacks: ["React Native", "Tailwind CSS"],
     demo: "https://www.youtube.com/shorts/d7D580pSWM8",
     code: "https://github.com/CDInacio/food-mobile-app",
