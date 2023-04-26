@@ -15,7 +15,7 @@ export default function StackItem({ stackName, description, color }) {
     <>
       <div
         onClick={handleOpen}
-        className={`h-40 shadow-md dark:bg-panelDark bg-panel duration-500  rounded-lg  hover:shadow-none  flex items-center justify-center cursor-pointer`}
+        className={`h-40 shadow-md dark:bg-panelDark bg-background duration-500  rounded-lg  hover:shadow-none  flex items-center justify-center cursor-pointer`}
       >
         <Icon stl="text-neutral-800" name={stackName} />
       </div>
