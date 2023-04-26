@@ -53,6 +53,17 @@ export const PROJECTS = [
   {
     id: "p1",
     done: true,
+    name: "Easybank landing page",
+    image: "/images/easybank.png",
+    description:
+      "Landing page feita como solução para um desafio no site Frontend mentor, cujo o objetivo era a construção de um layout onde os usuários podem ver o design ideal para o site, dependendo do tamanho da tela do dispositivo, alem de ver estados de foco para todos os elementos interativos na página.",
+    stacks: ["Next.js", "TypeScript", "Tailwind CSS"],
+    demo: "https://easybank-lake-eight.vercel.app",
+    code: "https://github.com/CDInacio/Easybank-landing-page",
+  },
+  {
+    id: "p2",
+    done: true,
     name: "Portfólio",
     image: "/images/portfolio.png",
     description:
@@ -62,18 +73,18 @@ export const PROJECTS = [
     code: "https://github.com/CDInacio/Portfolio",
   },
   {
-    id: "p2",
+    id: "p3",
     done: true,
     name: "Previsões",
     image: "/images/weather.png",
     description:
-      "Projeto feito para buscar informações relevantes sobre o clima de uma determinada cidade, com a possibilidade de alterar entre o tema claro e escuro. Além disso, foi o primeiro projeto onde utilizei uma forma diferente de buscar dados de uma API.",
+      "Projeto feito para buscar informações relevantes sobre o clima de uma determinada cidade, com a possibilidade de alterar entre o tema claro e escuro. Além disso, foi o primeiro projeto onde utilizei uma forma diferente de buscar dados de uma API, com o React Query.",
     stacks: ["React", "TypeScript", "Tailwind CSS", "React Query"],
     demo: "https://previsoes-mu.vercel.app/",
     code: "https://github.com/CDInacio/weather-app",
   },
   {
-    id: "p3",
+    id: "p4",
     done: false,
     name: "Landing Page padaria",
     image: "/images/landingpage.png",
@@ -81,7 +92,7 @@ export const PROJECTS = [
     stacks: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
-    id: "p4",
+    id: "p5",
     done: true,
     name: "Countries",
     image: "/images/countries.png",
@@ -92,7 +103,7 @@ export const PROJECTS = [
     code: "https://github.com/CDInacio/REST-Countries-API-with-color-theme-switcher",
   },
   {
-    id: "p5",
+    id: "p6",
     done: true,
     name: "Movie and Series Finder",
     image: "/images/movieFinder.png",
@@ -103,7 +114,7 @@ export const PROJECTS = [
     code: "https://github.com/CDInacio/movie-and-series-finder",
   },
   {
-    id: "p6",
+    id: "p7",
     done: true,
     name: "Know Your Calories",
     image: "/images/calories.png",
