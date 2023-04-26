@@ -3,8 +3,6 @@ import { GoLinkExternal } from "react-icons/go";
 
 import Image from "next/image";
 
-import styles from "../style.module.css";
-
 export default function ProjectItem({ ...props }) {
   return (
     <div
@@ -29,10 +27,10 @@ export default function ProjectItem({ ...props }) {
             </span>
           ))}
         </div>
-        <h1 className="text-xl sm:text-2xl font-neue font-bold  tracking-wide	mt-4">
+        <h1 className="text-xl sm:text-2xl font-neue  tracking-wide	mt-4">
           {props.name}
         </h1>
-        <p className=" text-neutral-800 mt-3 mb-4 text-sm sm:text-base">
+        <p className=" text-neutral-600 mt-3 mb-4 text-sm sm:text-base">
           {props.description}
         </p>
         {props.done ? (
