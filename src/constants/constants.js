@@ -53,13 +53,13 @@ export const PROJECTS = [
   {
     id: "p1",
     done: true,
-    name: "Easybank landing page",
-    image: "/images/easybank.png",
+    name: "Bookmark landing page",
+    image: "/images/bookmark.png",
     description:
       "Landing page feita como solução para um desafio no site Frontend mentor, cujo o objetivo era a construção de um layout onde os usuários podem ver o design ideal para o site, dependendo do tamanho da tela do dispositivo, alem de ver estados de foco para todos os elementos interativos na página.",
     stacks: ["Next.js", "TypeScript", "Tailwind CSS"],
-    demo: "https://easybank-lake-eight.vercel.app",
-    code: "https://github.com/CDInacio/Easybank-landing-page",
+    demo: "https://bookmark-7epbia9ts-cdinacio.vercel.app/",
+    code: "https://github.com/CDInacio/Bookmark-Landing-Page",
   },
   {
     id: "p2",
