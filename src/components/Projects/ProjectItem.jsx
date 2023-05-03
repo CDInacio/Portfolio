@@ -16,7 +16,7 @@ export default function ProjectItem({ ...props }) {
           alt={`imagem do projeto ${props.name}`}
         />
       </div>
-      <div className="px-4 pt-2 pb-4 flex flex-col  ">
+      <div className="px-4 pt-5 pb-6 flex flex-col  ">
         <div className="flex flex-wrap">
           {props.stacks.map((stack) => (
             <span
