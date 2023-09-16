@@ -13,7 +13,7 @@ export default function Navbar() {
     theme === "dark" ? "/images/logo-darkmode.svg" : "/images/logo.svg";
   return (
     <nav
-      className={`sticky top-0  py-[25px] bg-[#e7e7e7] dark:bg-neutral-800  z-[100]`}
+      className={`sticky top-0  py-[25px] bg-[#eeeeee] dark:bg-neutral-800  z-[100]`}
     >
       <div className="flex justify-between items-center container px-[20px] mx-auto">
         <Link href="/">
