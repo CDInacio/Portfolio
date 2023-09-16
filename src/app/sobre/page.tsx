@@ -6,21 +6,17 @@ const image = "/images/profile.svg";
 
 export default function About() {
   const iconStl = "h-[15px] w-[15px] lg:h-[20px] lg:w-[20px]";
+
+  const stacks = ["html", "css", "js", "react", "next", "tailwind", "git"];
+
   return (
-    <section className="h-[calc(100vh-80px)]  flex items-center">
+    <section className="h-[calc(100vh-80px)]  flex items-center mb-[100px] sm:mb-0">
       <div className="container px-[20px] mx-auto flex flex-col-reverse xl:flex-row items-center justify-between mt-[100px] sm:mt-[0px]">
         <div className=" max-w-[800px] mt-[40px]">
           <div className="flex">
-            <Icon
-              text="html"
-              className="h-[15px] w-[15px] md:h-[20px] md:w-[20px]"
-            />
-            <Icon text="css" className={iconStl} />
-            <Icon text="js" className={iconStl} />
-            <Icon text="react" className={iconStl} />
-            <Icon text="next" className={iconStl} />
-            <Icon text="tailwind" className={iconStl} />
-            <Icon text="git" className={iconStl} />
+            {stacks.map((stack, i) => (
+              <Icon key={i} className={iconStl} text={stack} />
+            ))}
           </div>
           <h1 className="text-primary font-neue text-4xl sm:text:4xl md:text-6xl mt-[10px] mb-[5px] ">
             Sobre mim

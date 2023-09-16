@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <main className="z-10">
-        <div className="container  px-[20px] mx-auto overflow-x-hidden">
+        <div className="container  px-[20px] mx-auto overflow-x-hidden mb-[100px] sm:mb-0">
           <Hero />
           <Devider />
           <Projects />
