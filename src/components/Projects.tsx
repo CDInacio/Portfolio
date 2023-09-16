@@ -31,7 +31,7 @@ export default function Projects() {
             </div>
             <div className=" flex flex-col justify-between">
               <div className="md:ml-[20px]">
-                <div className="flex mt-[10px]">
+                <div className="flex mt-[20px]">
                   {project.stacks.map((stack, i) => (
                     <Icon key={i} className="w-[15px] h-[15px]" text={stack} />
                   ))}
