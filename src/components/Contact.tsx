@@ -20,7 +20,7 @@ export default function Contact() {
           <p>ou</p>
           <div className="flex">
             <Link href="https://github.com/CDInacio" about="_blank">
-              <FaGithub className="mx-[5px] bg-red-400" size={25} />
+              <FaGithub className="mx-[5px]" size={25} />
             </Link>
             <Link href="https://www.instagram.com/devclaudio96/" about="_blank">
               <FaInstagram className="mx-[5px]" size={25} />
