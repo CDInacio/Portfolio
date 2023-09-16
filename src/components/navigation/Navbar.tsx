@@ -11,6 +11,7 @@ export default function Navbar() {
   const { theme } = useTheme();
   const image =
     theme === "dark" ? "/images/logo-darkmode.svg" : "/images/logo.svg";
+
   return (
     <nav
       className={`sticky top-0  py-[25px] bg-[#eeeeee] dark:bg-neutral-800  z-[100]`}
