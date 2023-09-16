@@ -1,0 +1,13 @@
+
+@keyframes slide-in {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 0.3s ease-in-out forwards;
+  }
