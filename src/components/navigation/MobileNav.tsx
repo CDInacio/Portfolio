@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 
 import { useTheme } from "next-themes";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { LINKS } from "../../data/constants";
 
 export default function MobileNav() {
+  const path = usePathname();
+
   const [showMenu, setShowMenu] = useState(false);
   const genericHamburgerLine = `h-[3px] w-full my-1 rounded ${
     showMenu ? "bg-white" : "bg-primary"
@@ -17,6 +20,10 @@ export default function MobileNav() {
   };
 
   const { setTheme } = useTheme();
+
+  useEffect(() => {
+    setShowMenu(false);
+  }, [path]);
 
   return (
     <div className="flex md:hidden ">
