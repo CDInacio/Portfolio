@@ -10,8 +10,8 @@ export default function About() {
   const stacks = ["html", "css", "js", "react", "next", "tailwind", "git"];
 
   return (
-    <section className="h-[calc(100vh-80px)]  flex items-center mb-[101px] sm:mb-0">
-      <div className="container px-[20px] mx-auto flex flex-col-reverse xl:flex-row items-center justify-between mt-[100px] sm:mt-[0px]">
+    <section className="h-[calc(100vh-80px)]  flex items-center ">
+      <div className="container px-[20px] mx-auto flex flex-col-reverse xl:flex-row items-center justify-between mt-[100px] sm:mt-[0px] mb-[101px] sm:mb-0">
         <div className=" max-w-[800px] mt-[40px]">
           <div className="flex">
             {stacks.map((stack, i) => (
