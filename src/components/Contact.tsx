@@ -2,6 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -18,9 +19,15 @@ export default function Contact() {
           </div>
           <p>ou</p>
           <div className="flex">
-            <FaGithub className="px-[5px]" size={30} />
-            <FaInstagram className="px-[5px]" size={30} />
-            <FaLinkedin className="px-[5px]" size={30} />
+            <Link href="https://github.com/CDInacio">
+              <FaGithub className="px-[5px]" size={30} />
+            </Link>
+            <Link href="https://www.instagram.com/devclaudio96/">
+              <FaInstagram className="px-[5px]" size={30} />
+            </Link>
+            <Link href="https://www.linkedin.com/in/cl%C3%A1udio-dantas-520a1615b/">
+              <FaLinkedin className="px-[5px]" size={30} />
+            </Link>
           </div>
         </div>
       </div>
