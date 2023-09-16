@@ -20,13 +20,13 @@ export default function Contact() {
           <p>ou</p>
           <div className="flex">
             <Link href="https://github.com/CDInacio">
-              <FaGithub className="px-[5px]" size={30} />
+              <FaGithub className="mx-[5px]" size={25} />
             </Link>
             <Link href="https://www.instagram.com/devclaudio96/">
-              <FaInstagram className="px-[5px]" size={30} />
+              <FaInstagram className="mx-[5px]" size={25} />
             </Link>
             <Link href="https://www.linkedin.com/in/cl%C3%A1udio-dantas-520a1615b/">
-              <FaLinkedin className="px-[5px]" size={30} />
+              <FaLinkedin className="mx-[5px]" size={25} />
             </Link>
           </div>
         </div>
