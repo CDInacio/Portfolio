@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="h-[calc(100vh-80px)] flex items-center ">
-      <div>
+    <section className="h-screen flex items-center ">
+      <div className="">
         <div className="flex">
           <div className="flex flex-col text-7xl sm:text-8xl  md:text-9xl font-neue text-primary">
             <h1 className="font-neue">Cláudio</h1>
