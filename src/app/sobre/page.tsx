@@ -10,7 +10,7 @@ export default function About() {
   const stacks = ["html", "css", "js", "react", "next", "tailwind", "git"];
 
   return (
-    <section className="min-h-[calc(100vh-80px)]  flex items-center  py-[50px]">
+    <section className="min-h-[calc(100vh-80px)]  flex items-center mt-[130px] md:mt-0 mb-[50px]">
       <div className="container px-[20px] mx-auto flex flex-col-reverse xl:flex-row items-center justify-between  sm:mt-[0px]">
         <div className=" max-w-[800px] mt-[40px]">
           <div className="flex">
