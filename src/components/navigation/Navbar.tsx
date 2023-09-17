@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0  py-[25px] bg-[#eeee]  w-full dark:bg-neutral-800  z-[100]`}
+      className={`fixed top-0  py-[25px] bg-white w-full dark:bg-neutral-800  z-[100]`}
     >
       <div className="flex justify-between items-center container px-[20px] mx-auto">
         <Link href="/">
