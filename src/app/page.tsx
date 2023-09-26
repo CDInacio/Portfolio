@@ -1,9 +1,9 @@
 "use client";
 
-import Contact from "../components/Contact";
-import Devider from "../components/Devider";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
+import Contact from "../components/Contact/Contact";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Devider from "../components/ui/Devider";
 
 export default function Home() {
   // const [isLoading, setIsLoading] = useState<boolean>(true);
