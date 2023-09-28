@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0  py-[25px] bg-white w-full dark:bg-neutral-800  z-[100] ${
+      className={`fixed top-0  py-[25px] bg-[#F5F5F5] w-full dark:bg-neutral-800  z-[100] ${
         pageHeight > 100 ? "shadow-md" : ""
       } transition-all duration-300 }`}
     >
