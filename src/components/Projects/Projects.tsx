@@ -7,8 +7,8 @@ export default function Projects() {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   return (
-    <section className=" w-screen bg-[#D6D6D6] py-24 dark:bg-neutral-700">
-      <div className="max-w-[1000px] mx-auto  ">
+    <section className=" w-screen bg-[#D6D6D6] flex justify-center py-24 dark:bg-neutral-700">
+      <div className="max-w-[1000px] px-5 ">
         <h1 className="text-4xl sm:text:4xl md:text-6xl font-neue text-primary text-center ">
           Projetos
         </h1>

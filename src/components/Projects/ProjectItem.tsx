@@ -6,7 +6,7 @@ import Icon from "../ui/Icon";
 
 export default function ProjectItem({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col md:flex-row mb-[60px] min-w-[300px]">
+    <div className="flex flex-col justify-center md:flex-row mb-[60px] ">
       <div className=" h-[200px]   sm:h-[250px] w-full md:w-[350px] md:h-[200px] relative  overflow-hidden rounded">
         <Image
           fill

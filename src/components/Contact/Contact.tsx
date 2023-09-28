@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col-reverse md:flex-row max-w-[1000px] mx-auto md:justify-between items-center py-24 ">
+    <section className="flex flex-col-reverse md:flex-row max-w-[1000px] mx-auto md:justify-between items-center py-24 px-6">
       <div className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[350px] xl:h-[350px] relative ">
         <Image src="/images/contact.svg" fill alt="contact" />
       </div>
