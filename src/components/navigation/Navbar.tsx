@@ -18,8 +18,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0  py-[25px] bg-[#F5F5F5] w-full dark:bg-neutral-800  z-[100] ${
-        pageHeight > 100 ? "shadow-md" : ""
+      className={`fixed top-0   bg-[#F5F5F5] w-full dark:bg-neutral-800  z-[100] ${
+        pageHeight > 100 ? "shadow-md py-[15px]" : "py-[25px]"
       } transition-all duration-300 }`}
     >
       <div className="flex justify-between items-center container px-[20px] mx-auto">
