@@ -8,5 +8,14 @@ interface ContainerI {
 }
 
 export default function Container({ children, className }: ContainerI) {
-  return <div className={twMerge("", className)}>{children}</div>;
+  return (
+    <div
+      className={twMerge(
+        "container  px-[20px] mx-auto overflow-x-hidden mb-[100px] sm:mb-0",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
 }
