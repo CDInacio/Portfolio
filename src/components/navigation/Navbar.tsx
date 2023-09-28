@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 
+import useHeight from "../../app/hooks/useHeight";
 import MobileNav from "./MobileNav";
 import NavList from "./NavList";
 
@@ -12,9 +13,14 @@ export default function Navbar() {
   const image =
     theme === "dark" ? "/images/logo-darkmode.svg" : "/images/logo.svg";
 
+  const { pageHeight } = useHeight();
+  console.log(pageHeight);
+
   return (
     <nav
-      className={`fixed top-0  py-[25px] bg-white w-full dark:bg-neutral-800  z-[100]`}
+      className={`fixed top-0  py-[25px] bg-white w-full dark:bg-neutral-800  z-[100] ${
+        pageHeight > 100 ? "shadow-md" : ""
+      } transition-all duration-300 }`}
     >
       <div className="flex justify-between items-center container px-[20px] mx-auto">
         <Link href="/">
