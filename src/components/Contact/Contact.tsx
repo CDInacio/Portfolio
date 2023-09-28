@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section className="flex flex-col-reverse md:flex-row max-w-[1000px] mx-auto md:justify-between items-center  mt-[70px]">
-      <div className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[350px] xl:h-[350px] relative mt-[50px] ">
+    <section className="flex flex-col-reverse md:flex-row max-w-[1000px] mx-auto md:justify-between items-center py-24 ">
+      <div className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[350px] xl:h-[350px] relative ">
         <Image src="/images/contact.svg" fill alt="contact" />
       </div>
       <div className="flex flex-col items-center ">
