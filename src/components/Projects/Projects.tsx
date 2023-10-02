@@ -7,7 +7,7 @@ export default function Projects() {
   const [showMore, setShowMore] = useState<boolean>(false);
 
   return (
-    <section className=" w-screen  flex justify-center py-24 dark:bg-dark">
+    <section className=" w-screen  flex justify-center py-24 bg-backgroundLightSecondary dark:bg-backgroundDarkSecondary">
       <div className="max-w-[1000px] px-5 ">
         <h1 className="text-4xl sm:text:4xl md:text-6xl font-neue text-primary text-center ">
           Projetos

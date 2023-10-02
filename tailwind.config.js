@@ -16,11 +16,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#e76f51",
-        secondary: "#333A96",
-        background: "hsl(0, 0%, 98%)",
-        panel: "hsl(0, 0%, 100%)",
-        // dark: "#222222",
+        primary: "#EB5E28",
+        backgroundLightMain: "#FFFCF2",
+        backgroundLightSecondary: "#E5E2DC",
+        backgroundDarkMain: "#252422",
+        backgroundDarkSecondary: "#403D39",
       },
      
     },

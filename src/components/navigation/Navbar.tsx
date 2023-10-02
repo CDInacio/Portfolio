@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0   bg-backgroundLight w-full dark:bg-dark  z-[100] ${
+      className={`fixed top-0   bg-backgroundLightMain w-full dark:bg-backgroundDarkMain  z-[100] ${
         pageHeight > 100 ? "shadow-md py-[15px]" : "py-[25px]"
       } transition-all duration-300 }`}
     >
