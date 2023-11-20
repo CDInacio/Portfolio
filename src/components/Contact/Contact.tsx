@@ -7,11 +7,13 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <section className="flex flex-col-reverse md:flex-row max-w-[1000px] mx-auto md:justify-between items-center py-24 px-6">
-      <div className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[350px] xl:h-[350px] relative ">
+      <div className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[350px] xl:h-[350px] relative">
         <Image src="/images/contact.svg" fill alt="contact" />
       </div>
-      <div className="flex flex-col items-center ">
-        <h3 className="text-2xl font-neue text-primary">Entre em contato:</h3>
+      <div className="flex flex-col items-center mb-10 md:mb-0">
+        <h3 className="text-2xl md:text-4xl font-neue text-primary">
+          Entre em contato:
+        </h3>
         <div className="flex flex-col items-center">
           <div className="flex items-center">
             <IoMailOutline size={20} />
