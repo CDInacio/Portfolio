@@ -14,14 +14,14 @@ export default function Navbar() {
     theme === "dark" ? "/images/logo-darkmode.svg" : "/images/logo.svg";
 
   const { pageHeight } = useHeight();
-
+  console.log(pageHeight);
   return (
     <nav
-      className={`fixed top-0  bg-backgroundLightMain shadow-sm  w-full dark:bg-backgroundDarkMain  z-[100] ${
+      className={`fixed top-0    bg-backgroundLightMain  w-full dark:bg-backgroundDarkMain  z-[100] ${
         pageHeight > 100 ? "shadow-md h-16" : "h-24"
       } transition-all duration-300 }`}
     >
-      <div className="flex justify-between items-center h-full container px-5 mx-auto">
+      <div className="flex justify-between items-center container h-full px-[20px] mx-auto">
         <Link href="/">
           <Image src={image} alt="logo" height={30} width={30} />
         </Link>
