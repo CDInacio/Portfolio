@@ -29,7 +29,7 @@ export default function MobileNav() {
     <div className="flex md:hidden ">
       <button
         className="flex  flex-col h-10 w-[30px]  rounded justify-center items-center group z-[200]"
-        onClick={() => setShowMenu(!showMenu)}
+        onClick={toggleMenu}
       >
         <div
           className={`${genericHamburgerLine} ${
