@@ -2,7 +2,7 @@ import Container from "../ui/Container";
 
 export default function Hero() {
   return (
-    <header className="h-[calc(100vh-80px)] mt-[80px]  flex items-center ">
+    <header className="h-[calc(100vh-96px)] mt-[96px]  flex items-center ">
       <Container>
         <div className="flex">
           <div className="flex flex-col text-7xl sm:text-8xl  md:text-9xl font-neue text-primary">
