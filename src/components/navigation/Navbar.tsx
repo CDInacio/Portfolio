@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0  bg-backgroundLightMain shadow-sm  w-full dark:bg-backgroundDarkMain  z-[100] ${
-        pageHeight > 100 ? "shadow-lg h-16" : "h-24"
+        pageHeight > 100 ? "shadow-md h-16" : "h-24"
       } transition-all duration-300 }`}
     >
       <div className="flex justify-between items-center h-full container px-5 mx-auto">
