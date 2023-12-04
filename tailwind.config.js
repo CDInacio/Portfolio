@@ -12,17 +12,17 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      neue: ["Bebas Neue", "cursive"],
+      roboto: ["Roboto", " sans-serif"],
+      robotoMono: ["Roboto Mono", "monospace"],
     },
     extend: {
       colors: {
-        primary: "#EB5E28",
-        backgroundLightMain: "#FFFCF2",
-        backgroundLightSecondary: "#E5E2DC",
-        backgroundDarkMain: "#252422",
-        backgroundDarkSecondary: "#403D39",
+        primary: "#D59A7D",
+        backgroundDark: "#141414",
       },
-     
+      boxShadow: {
+        "custom-inset": "0px 2px 59px 8px rgba(0, 0, 0, 1) inset",
+      },
     },
   },
   plugins: [],

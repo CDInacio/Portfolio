@@ -1,4 +1,3 @@
-import Navbar from "../components/navigation/Navbar";
 import "./globals.css";
 import Provider from "./provider";
 
@@ -14,11 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=" bg-backgroundLightMain dark:bg-backgroundDarkMain">
-        <Provider>
-          <Navbar />
-          {children}
-        </Provider>
+      <body className="">
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
