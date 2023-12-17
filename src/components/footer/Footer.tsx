@@ -12,7 +12,9 @@ const Footer = () => {
           </p>
           <div className="flex mt-5 sm:mt-0">
             {contactIcons.map((contact) => (
-              <div
+              <a
+                href={contact.link}
+                target="_blank"
                 key={contact.id}
                 className="w-9 h-9 rounded-full bg-neutral-600 flex items-center justify-center mx-2"
               >
@@ -20,7 +22,7 @@ const Footer = () => {
                   iconType={contact.text}
                   className="text-2xl hover:text-primary transition-colors cursor-pointer "
                 />
-              </div>
+              </a>
             ))}
           </div>
         </div>
