@@ -44,7 +44,7 @@ export const projects: Project[] = [
     text: "Countries API com switch de tema",
     imagePath: "/images/countries.jpg",
     description:
-      "Landing page desenvolvida como parte de um desafio do site Frontend Mentor. O objetivo era desenvolver uma landing page responsiva, com o layout o mais próximo possível do design proposto.",
+      "Aplicação feita como desafio do site Frontend Mentor. O objetivo era desenvolver uma aplicação que consumisse a API REST Countries, e que tivesse um switch de tema, para alternar entre o tema claro e o escuro.",
     link: "https://countries-lilac.vercel.app/",
     code: "https://github.com/CDInacio/REST-Countries-API-with-color-theme-switcher",
     stack: ["React", "Tailwind CSS", "API"],
