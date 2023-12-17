@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-import useSize from "../../hooks/useSize";
 import Button from "../commom/Button";
 import Reveal from "../commom/Reveal";
 
@@ -21,8 +20,6 @@ const ProjectItem = ({
   code,
   link,
 }: ProjectItemProps) => {
-  const { width } = useSize();
-
   return (
     <div className="flex flex-col text-white  ">
       <Reveal className="w-full  min-h-[200px] xl:h-auto">
