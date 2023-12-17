@@ -1,75 +1,94 @@
-export const LINKS = [
-  { text: "Home", path: "" },
-  { text: "Sobre", path: "/sobre" },
-  // { text: "Projetos" },
-  // { text: "Contato" },
+export const techIcons = [
+  { text: "html" },
+  { text: "css" },
+  { text: "javascript" },
+  { text: "git" },
+  { text: "tailwind" },
+  { text: "next" },
+  { text: "react" },
 ];
 
-export const PROJECTS: Project[] = [
+export const projects: Project[] = [
   {
-    id: "p1",
-    done: true,
-    name: "League of Legends Quiz",
-    image: "/images/quiz.jpg",
+    id: 1,
+    text: "Previsões",
+    imagePath: "/images/weather.jpg",
     description:
-      "Este projeto é um quiz relacionado ao universo do jogo League of Legends, onde os jogadores e fãs do jogo podem acessar o site para testar seu conhecimento sobre o jogo.",
-    stacks: ["next", "typescript", "tailwind"],
-    demo: "https://league-of-quiz-five.vercel.app/",
-    code: "https://github.com/CDInacio/league-of-legends-quiz",
-  },
-  {
-    id: "p2",
-    done: true,
-    name: "Bookmark landing page",
-    image: "/images/landing page.png",
-    description:
-      "Este projeto é uma landing page desenvolvida como parte de um desafio proposto pelo site Frontend Mentor. A página tem como objetivo apresentar informações e funcionalidades relacionadas a um serviço ou produto fictício chamado Bookmark.",
-    stacks: ["next", "typescript", "tailwind"],
-    demo: "https://bookmark-7epbia9ts-cdinacio.vercel.app/",
-    code: "https://github.com/CDInacio/Bookmark-Landing-Page",
-  },
-  {
-    id: "p4",
-    done: true,
-    name: "Previsões",
-    image: "/images/weather.jpg",
-    description:
-      "Este projeto oferece aos usuários a capacidade de consultar informações atualizadas sobre a previsão do tempo de cidades em todo o mundo. Os usuários podem inserir o nome da cidade desejada e, em seguida, receberão dados precisos sobre as condições meteorológicas para essa cidade.",
-    stacks: ["react", "typescript", "tailwind", "react query"],
-    demo: "https://previsoes-mu.vercel.app/",
+      "Aplicação para consultar a previsão do tempo de qualquer cidade do mundo. Utilizando a API do WeatherAPI, é possível consultar a previsão do tempo de qualquer cidade do mundo. ",
+    link: "https://previsoes-mu.vercel.app/",
     code: "https://github.com/CDInacio/weather-app",
+    stack: ["Next.js", "Tailwind CSS", "TypeScript", "API"],
   },
   {
-    id: "p5",
-    done: true,
-    name: "Countries",
-    image: "/images/countries.jpg",
+    id: 2,
+    text: "League of Quiz",
+    imagePath: "/images/quiz.jpg",
     description:
-      "Esse projeto foi um desafio encontrado no site Front-end Mentor, onde eu deveria fazer o consumo de uma API para disponibilizar informações sobre países, além de replicar o desing e criar uma funcionalidade de dark mode.",
-    stacks: ["react", "typescript", "tailwind"],
-    demo: "https://countries-lilac.vercel.app/",
+      "Quiz sobre o jogo League of Legends, com perguntas sobre o jogo e seus personagens. ",
+    link: "https://league-of-quiz-five.vercel.app/",
+    code: "https://github.com/CDInacio/league-of-legends-quiz",
+    stack: ["React", "Tailwind CSS", "TypeScript"],
+  },
+  {
+    id: 3,
+    text: "Landing Page",
+    imagePath: "/images/landing-page.jpg",
+    description:
+      "Landing page desenvolvida como parte de um desafio do site Frontend Mentor. O objetivo era desenvolver uma landing page responsiva, com o layout o mais próximo possível do design proposto.",
+    link: "https://bookmark-landing-page-tau-nine.vercel.app/",
+    code: "https://github.com/CDInacio/Bookmark-Landing-Page",
+    stack: ["Next.js", "Tailwind CSS", "TypeScript"],
+  },
+  {
+    id: 4,
+    text: "Countries API com switch de tema",
+    imagePath: "/images/countries.jpg",
+    description:
+      "Landing page desenvolvida como parte de um desafio do site Frontend Mentor. O objetivo era desenvolver uma landing page responsiva, com o layout o mais próximo possível do design proposto.",
+    link: "https://countries-lilac.vercel.app/",
     code: "https://github.com/CDInacio/REST-Countries-API-with-color-theme-switcher",
+    stack: ["React", "Tailwind CSS", "API"],
+  },
+];
+
+export const contactIcons: ContactIconType[] = [
+  { id: "1", text: "github", link: "https://github.com/CDInacio" },
+  {
+    id: "2",
+    text: "linkedin",
+    link: "https://www.linkedin.com/in/cl%C3%A1udio-dantas-520a1615b/",
   },
   {
-    id: "p6",
-    done: true,
-    name: "Movie and Series Finder",
-    image: "/images/movies.jpg",
-    description:
-      "Utilizando a  OMDb API, neste projeto você pode pesquisar pelo filme e série que quiser, e também ver informações detalhadas sobre ele. Este foi meu primeiro projeto usando o bundler Vite, que se tornou a forma mais popular de criar projetos react.",
-    stacks: ["react", "tailwind"],
-    demo: "https://movie-and-series-finder.vercel.app/",
-    code: "https://github.com/CDInacio/movie-and-series-finder",
+    id: "3",
+    text: "instagram",
+    link: "https://www.instagram.com/devclaudio96/",
   },
-  // {
-  //   id: "p7",
-  //   done: true,
-  //   name: "Know Your Calories",
-  //   image: "/images/calories.png",
-  //   description:
-  //     "Este projeto surgiu a partir de uma curiosidade sobre como programar em react Native. Nele, você pode ver as informações nutricionais de diversos tipos de alimentos; além de poder ver e contar a distribuição calóricas dos mesmos.",
-  //   stacks: ["react Native", "tailwind"],
-  //   demo: "https://www.youtube.com/shorts/d7D580pSWM8",
-  //   code: "https://github.com/CDInacio/food-mobile-app",
-  // },
+];
+
+export const links = [
+  { id: 1, text: "Inicio" },
+  { id: 2, text: "Sobre" },
+  { id: 3, text: "Projetos" },
+  { id: 4, text: "Contato" },
+];
+
+export const contacts = [
+  {
+    id: 1,
+    text: "+55 99284-1955",
+    icon: "phone",
+    link: "https://api.whatsapp.com/send?phone=5531992841955",
+  },
+  {
+    id: 2,
+    text: "claudiodantas1996@gmail.com",
+    icon: "email",
+    link: "mailto:claudiodantas1996@gmail.com",
+  },
+  {
+    id: 3,
+    text: "João Monlevade, MG",
+    icon: "local",
+    link: "https://www.google.com.br/maps/place/Jo%C3%A3o+Monlevade,+MG/@-19.8317581,-43.198347,13z/data=!3m1!4b1!4m6!3m5!1s0xa5074732765415:0xe75615374cb9bb9a!8m2!3d-19.808204!4d-43.1735433!16s%2Fg%2F11bxfz0dwp?entry=ttu",
+  },
 ];
