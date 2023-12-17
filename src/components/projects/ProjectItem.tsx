@@ -56,22 +56,14 @@ const ProjectItem = ({
         </div>
         <div className="flex gap-x-3">
           <Reveal>
-            <Button
-              type="button"
-              intent="primary"
-              size={width < 768 ? "sm" : "md"}
-            >
+            <Button type="button" intent="primary" size="md">
               <a href={link} target="_blank">
                 Link
               </a>
             </Button>
           </Reveal>
           <Reveal>
-            <Button
-              type="button"
-              intent="primary"
-              size={width < 768 ? "sm" : "md"}
-            >
+            <Button type="button" intent="primary" size="md">
               <a href={code} target="_blank">
                 Código
               </a>
