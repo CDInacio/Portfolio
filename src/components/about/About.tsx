@@ -58,14 +58,16 @@ const About = ({ id }: { id: string }) => {
         </div>
       </Reveal>
       <div className=" flex flex-col items-center mt-48">
-        <Reveal>
-          <div className=" flex flex-col items-center">
+        <div className=" flex flex-col items-center">
+          <Reveal>
             <h2 className="text-xl lg:text-3xl font-poppins font-bold">
               Tecnologias que uso em{" "}
               <span className="text-primary">
                 meus projetos<span>.</span>
               </span>
             </h2>
+          </Reveal>
+          <Reveal>
             <div className=" flex justify-center flex-wrap max-w-[500px] gap-10 mt-20">
               {techIcons.map((tech, index) => (
                 <Icon
@@ -75,8 +77,8 @@ const About = ({ id }: { id: string }) => {
                 />
               ))}
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
