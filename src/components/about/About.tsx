@@ -49,11 +49,11 @@ const About = ({ id }: { id: string }) => {
             mas atualmente, resido em João Monlevade, MG. Estou seguindo minha
             paixão pela tecnologia enquanto curso Sistemas de Informação na
             Universidade Federal de Ouro Preto, campus João Monlevade. Há
-            aproximadamente um ano e meio, mergulhei de cabeça no mundo da
+            aproximadamente um ano e meio, começei a estudar e praticar
             programação web, e desde então, venho aprimorando minhas habilidades
-            e conhecimentos nessa área. A programação web se tornou mais do que
-            apenas uma disciplina para mim; é uma verdadeira paixão que pretendo
-            transformar em uma carreira sólida e gratificante.
+            e conhecimentos nessa área. Atualmente, estou focado em me tornar um
+            desenvolvedor full-stack, e também adiquirir conhecimentos de
+            desenvolvimento mobile.
           </p>
         </div>
       </Reveal>
