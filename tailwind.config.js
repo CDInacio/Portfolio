@@ -12,12 +12,14 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      roboto: ["Roboto", " sans-serif"],
-      robotoMono: ["Roboto Mono", "monospace"],
+      lato: ["Lato", "sans-serif"],
+      poppins: ["Poppins", "monospace"],
     },
     extend: {
       colors: {
-        primary: "#D59A7D",
+        primary: "#4269E2",
+        primaryDark: "#2E55BA",
+        bgDark: "#1A1A1A",
         backgroundDark: "#141414",
       },
       boxShadow: {
