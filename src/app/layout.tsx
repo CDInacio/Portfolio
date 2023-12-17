@@ -1,3 +1,4 @@
+import { SectionContextProvider } from "../context/activeSection";
 import "./globals.css";
 import Provider from "./provider";
 
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="">
-        <Provider>{children}</Provider>
+        <SectionContextProvider>
+          <Provider>{children}</Provider>
+        </SectionContextProvider>
       </body>
     </html>
   );
