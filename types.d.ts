@@ -1,10 +1,15 @@
 interface Project {
-  id: string;
-  done: boolean;
-  name: string;
-  image: string;
+  id: number;
+  text: string;
+  imagePath: string;
   description: string;
-  stacks: string[];
-  demo?: string;
-  code?: string;
+  link: string;
+  code: string;
+  stack: string[];
 }
+
+type ContactIconType = {
+  id: string;
+  text: string;
+  link: string;
+};
