@@ -11,13 +11,7 @@ const Navbar = () => {
 
   return (
     <AnimatePresence>
-      {height != undefined ? (
-        height > 50 ? (
-          <NavbarScroll />
-        ) : (
-          <NavbarFixed />
-        )
-      ) : null}
+      {height != undefined && height > 50 ? <NavbarScroll /> : <NavbarFixed />}
     </AnimatePresence>
   );
 };
