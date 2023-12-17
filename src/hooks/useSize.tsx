@@ -4,6 +4,7 @@ interface WindowInfo {
   width: number | undefined;
   height: number | undefined;
 }
+
 const useSize = () => {
   const [windowInfo, setWindowInfo] = useState<WindowInfo>({
     width: undefined,
@@ -11,12 +12,11 @@ const useSize = () => {
   });
 
   useEffect(() => {
-    // Ensure window object is available
     if (typeof window !== "undefined") {
       const updateWindowInfo = () => {
         setWindowInfo({
           width: window.innerWidth,
-          height: window.innerHeight,
+          height: window.scrollY,
         });
       };
 
