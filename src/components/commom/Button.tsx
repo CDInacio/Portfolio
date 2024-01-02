@@ -3,7 +3,7 @@ import React from "react";
 import { cva } from "class-variance-authority";
 
 const buttonClasses = cva(
-  ["font-semibold", "border", "rounded", "transition duration-300"],
+  ["font-semibold", "border", "rounded", "transition duration-300", "w-full"],
   {
     variants: {
       intent: {
@@ -43,6 +43,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   intent?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
+  className?: string;
 }
 
 const Button = ({ children, intent, size, ...props }: ButtonProps) => {
