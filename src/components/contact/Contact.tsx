@@ -6,7 +6,7 @@ import { useSection } from "../../context/activeSection";
 import { contacts } from "../../data/constants";
 import useObserver from "../../hooks/useObserver";
 import Reveal from "../commom/Reveal";
-import TextInput from "../input/TextInput";
+import ContactForm from "./ContactForm";
 import ContactItem from "./ContactItem";
 
 const Contact = ({ id }: { id: string }) => {
@@ -39,36 +39,7 @@ const Contact = ({ id }: { id: string }) => {
           ))}
         </div>
         <p className="h-[1px] w-full md:w-[1px] md:h-[200px] bg-neutral-600 my-10 md:my-0 md:mx-20"></p>
-        <div className="flex flex-col  w-full md:w-[400px] ">
-          <Reveal className="w-full">
-            <TextInput
-              id="name"
-              type="text"
-              className="w-full mb-4"
-              autoComplete="off"
-              placeholder="Nome"
-            />
-          </Reveal>
-          <Reveal className="w-full">
-            <TextInput
-              id="email"
-              type="email"
-              className="w-full  mb-4"
-              autoComplete="off"
-              placeholder="Email"
-            />
-          </Reveal>
-          <Reveal className="w-full">
-            <textarea
-              name=""
-              id="message"
-              cols={30}
-              rows={10}
-              className="bg-neutral-800 w-full  py-2 px-3  rounded border-[1px] border-transparent focus:border-[1px] focus:border-primary transtition duration-200"
-              placeholder="Mensagem"
-            />
-          </Reveal>
-        </div>
+        <ContactForm />
       </div>
     </section>
   );
