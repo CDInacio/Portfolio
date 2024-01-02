@@ -14,15 +14,24 @@ const ContactForm = () => {
 
   const handleSendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
-    const serviceId = "service_yybusgw";
-    const templateId = "template_fed459f";
+
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+    const email = process.env.NEXT_PUBLIC_EMAIL;
+
     try {
       //   setLoading(true);
+      if (!serviceId || !templateId) {
+        console.log("Missing serviceId or templateId");
+        return;
+      }
+
       await emailjs.send(serviceId, templateId, {
         name: nameRef.current?.value,
-        recipient: "claudiodantas1996@gmail.com",
+        recipient: email,
         message: messageRef.current?.value,
       });
+
       nameRef.current!.value = "";
       messageRef.current!.value = "";
       alert("Email enviado com sucesso!");
