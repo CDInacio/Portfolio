@@ -8,7 +8,7 @@ const Footer = () => {
         <p className="w-full h-[1px] bg-neutral-600"></p>
         <div className="flex flex-col sm:flex-row items-center justify-between px-5 py-14">
           <p className="text-neutral-400 text-sm sm:text-base">
-            © Cláudio Dantas - 2023 | Feito com Next.js
+            © Cláudio Dantas - 2024 | Feito com Next.js
           </p>
           <div className="flex mt-5 sm:mt-0">
             {contactIcons.map((contact) => (
