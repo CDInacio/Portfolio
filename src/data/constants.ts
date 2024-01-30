@@ -17,7 +17,7 @@ export const projects: Project[] = [
       "Aplicação para consultar a previsão do tempo de qualquer cidade do mundo. Utilizando a API do WeatherAPI, é possível consultar a previsão do tempo de qualquer cidade do mundo. ",
     link: "https://previsoes-mu.vercel.app/",
     code: "https://github.com/CDInacio/weather-app",
-    stack: ["Next.js", "Tailwind CSS", "TypeScript", "API"],
+    stack: ["React", "Tailwind CSS", "TypeScript", "API"],
   },
   {
     id: 2,
