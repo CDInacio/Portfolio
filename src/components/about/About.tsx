@@ -45,15 +45,13 @@ const About = ({ id }: { id: string }) => {
             />
           </div>
           <p className="text-neutral-400 max-w-[800px] lg:ml-10 mt-10 lg:mt-0 text-sm sm:text-base  text-justify font-lato font-medium">
-            Olá, meu nome é Cláudio Vitor Dantas e sou natural de Serrinha, BA,
-            mas atualmente, resido em João Monlevade, MG. Estou seguindo minha
-            paixão pela tecnologia enquanto curso Sistemas de Informação na
-            Universidade Federal de Ouro Preto, campus João Monlevade. Há
-            aproximadamente um ano e meio, começei a estudar e praticar
-            programação web, e desde então, venho aprimorando minhas habilidades
-            e conhecimentos nessa área. Atualmente, estou focado em me tornar um
-            desenvolvedor full-stack, e também adiquirir conhecimentos de
+            Sou recém-formado em Sistemas de Informação pela Universidade Federal de Ouro Preto, campus João Monlevade, 
+            e atualmente resido em João Monlevade, MG, sendo natural de Serrinha, BA. Comecei a estudar e praticar
+            programação web há cerca de dois anos e meio, desde então, tenho focado em aprimorar minhas habilidades 
+            na área. Meu objetivo é me tornar um desenvolvedor full-stack, além de expandir meus conhecimentos no 
             desenvolvimento mobile.
+
+
           </p>
         </div>
       </Reveal>
