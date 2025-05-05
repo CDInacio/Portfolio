@@ -52,7 +52,7 @@ const Header = ({ id }: { id: string }) => {
           </Reveal>
           <Reveal>
             <p className="text-neutral-400 text-sm md:text-base w-[100%] font-medium md:w-[700px] my-3 font-lato">
-              Estudante de Sistemas de Informação buscando transformar ideias
+              Graduado em Sistemas de Informação buscando transformar ideias
               complexas em soluções digitais elegantes.
             </p>
           </Reveal>
