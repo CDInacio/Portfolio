@@ -1,58 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --primary: #4269E2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
-  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 
-
-
-input, textarea {
-  padding: 0;
-  margin: 0;
-  outline: none;
-  /* Add any additional styles as needed */
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  vertical-align: baseline;
-  list-style: none;
- 
-}
-/* custom scrollbar */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background-color: #1A1A1A;
+  background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
-  background-color: #4269E2;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
+  background: #e5e7eb;
 }
-
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #2E55BA;
+  background: #d1d5db;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
 }
 
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
+/* ==============================
+   Reveal Animation Utilities
+============================== */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==============================
+   Custom Animations (Tailwind @layer)
+============================== */
+@layer utilities {
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
 }

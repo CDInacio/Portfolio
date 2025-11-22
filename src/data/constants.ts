@@ -1,3 +1,5 @@
+import type { Project } from "../../types";
+
 export const techIcons = [
   { text: "html" },
   { text: "css" },
@@ -10,9 +12,9 @@ export const techIcons = [
 
 export const projects: Project[] = [
   {
-    id: 1,
-    text: "Previsões",
-    imagePath: "/images/weather.jpg",
+    id: "1",
+    title: "Previsões",
+    imageUrl: "/images/weather.jpg",
     description:
       "Aplicação para consultar a previsão do tempo de qualquer cidade do mundo. Utilizando a API do WeatherAPI, é possível consultar a previsão do tempo de qualquer cidade do mundo. ",
     link: "https://previsoes-mu.vercel.app/",
@@ -20,9 +22,9 @@ export const projects: Project[] = [
     stack: ["React", "Tailwind CSS", "TypeScript", "API"],
   },
   {
-    id: 2,
-    text: "League of Quiz",
-    imagePath: "/images/quiz.jpg",
+    id: "2",
+    title: "League of Quiz",
+    imageUrl: "/images/quiz.jpg",
     description:
       "Quiz sobre o jogo League of Legends, com perguntas sobre o jogo e seus personagens. ",
     link: "https://league-of-quiz-five.vercel.app/",
@@ -30,9 +32,9 @@ export const projects: Project[] = [
     stack: ["React", "Tailwind CSS", "TypeScript"],
   },
   {
-    id: 3,
-    text: "Landing Page",
-    imagePath: "/images/landing-page.jpg",
+    id: "3",
+    title: "Landing Page",
+    imageUrl: "/images/landing-page.jpg",
     description:
       "Landing page desenvolvida como parte de um desafio do site Frontend Mentor. O objetivo era desenvolver uma landing page responsiva, com o layout o mais próximo possível do design proposto.",
     link: "https://bookmark-landing-page-tau-nine.vercel.app/",
@@ -40,9 +42,9 @@ export const projects: Project[] = [
     stack: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
-    id: 4,
-    text: "Countries API com switch de tema",
-    imagePath: "/images/countries.jpg",
+    id: "4",
+    title: "Countries API com switch de tema",
+    imageUrl: "/images/countries.jpg",
     description:
       "Aplicação feita como desafio do site Frontend Mentor. O objetivo era desenvolver uma aplicação que consumisse a API REST Countries, e que tivesse um switch de tema, para alternar entre o tema claro e o escuro.",
     link: "https://countries-lilac.vercel.app/",
@@ -51,7 +53,7 @@ export const projects: Project[] = [
   },
 ];
 
-export const contactIcons: ContactIconType[] = [
+export const contactIcons = [
   { id: "1", text: "github", link: "https://github.com/CDInacio" },
   {
     id: "2",
