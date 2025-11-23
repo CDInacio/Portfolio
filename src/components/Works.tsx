@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import type { Project } from "../../types";
 import { projects } from "../data/constants";
@@ -39,7 +40,10 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <p className="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-2 max-w-[80%]">
             {project.description}
           </p>
-          <div className="w-8 h-8 border border-neutral-300 dark:border-neutral-700 rounded-full flex items-center justify-center group-hover:bg-black dark:group-hover:bg-white group-hover:border-black dark:group-hover:border-white transition-colors">
+          <Link
+            href={project.link ?? "#"}
+            className="w-8 h-8 border  border-neutral-300 dark:border-neutral-700 rounded-full flex items-center justify-center group-hover:bg-black dark:group-hover:bg-white group-hover:border-black dark:group-hover:border-white transition-colors"
+          >
             <svg
               width="10"
               height="10"
@@ -54,7 +58,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 className="text-neutral-400 group-hover:text-white dark:group-hover:text-black"
               />
             </svg>
-          </div>
+          </Link>
         </div>
         <div className="flex ">
           {project.stack.map((stack) => (
